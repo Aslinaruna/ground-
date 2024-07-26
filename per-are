@@ -1,0 +1,65 @@
+The college ground, a rectangular expanse, requires a fence for construction and a carpet for rainy season protection. The management seeks your help to precisely determine the length of the rope needed for the fence and the quantity of carpet required.
+
+Write a program to calculate the exact length of the rope and the necessary carpet quantity based on the provided length and breadth of the ground.
+
+Input Format
+
+The first integer corresponds to the length of the ground. The second integer corresponds to the breadth of the ground.
+
+Constraints
+
+Null
+
+Output Format
+
+Print the results in the specified format.
+
+Sample Input 0
+
+50
+20
+Sample Output 0
+
+Rope Length: 140m
+Carpet Quantity: 1000sqm
+Sample Input 1
+
+10
+5
+Sample Output 1
+
+Rope Length: 30m
+Carpet Quantity: 50sqm
+Sample Input 2
+
+30
+15
+Sample Output 2
+
+Rope Length: 90m
+Carpet Quantity: 450sqm
+Sample Input 3
+
+25
+30
+Sample Output 3
+
+Rope Length: 110m
+Carpet Quantity: 750sqm
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int l=sc.nextInt();
+        int b=sc.nextInt();
+        int R=2*(l+b);
+        int C=l*b;
+        System.out.println("Rope Length: "+R+"m");
+        System.out.print("Carpet Quantity: "+C+"sqm");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
